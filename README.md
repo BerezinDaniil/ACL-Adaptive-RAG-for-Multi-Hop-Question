@@ -10,6 +10,7 @@ This repository implements an **adaptive retrieval‑augmented generation (RAG)*
 | `test_qwen_adaptive.ipynb` | Scripts to run the **adaptive retrieval** strategy on the test set for each open‑source model. Uses the pre‑computed thresholds to decide dynamically whether to retrieve more documents or stop. |
 | `Adaptive_RAG.ipynb` | Core implementation of the **adaptive approach** specifically for Qwen3.5‑4B and Qwen3.5‑9B on the test set. Includes the entropy‑based stopping mechanism and evaluation of TPR / FPR. |
 | `naive_RAG.ipynb` | Implementation of the **naive (single‑step) baseline** for Qwen3.5‑4B and Qwen3.5‑9B. Retrieves top‑30 documents based on the main question (no decomposition, no iterative search). |
+| `tpr_fpr_calculate.ipynb` | Notebook for computing **True Positive Rate (TPR)** and **False Positive Rate (FPR)** for models using the adaptive approach with entropy‑based uncertainty estimation. |
 
 ### Main Functionality
 
